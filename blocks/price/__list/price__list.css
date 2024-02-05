@@ -1,0 +1,12 @@
+.price__list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+  width: 100%;
+}
+.price__list:last-child {
+  margin-bottom: 83px;
+}

@@ -1,0 +1,9 @@
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'GoodVibesProRegular','Inter', Arial, sans-serif;
+  font-size: 50px;
+  color: #000000;
+  grid-area: title;
+}

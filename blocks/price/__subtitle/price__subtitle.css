@@ -1,0 +1,11 @@
+.price__subtitle{
+  margin: 72px 0 20px 0;
+  padding: 0 0 10px 0;
+  text-transform: uppercase;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  color: #C4969E;
+  border-bottom: solid 1px #87BFCC;
+}

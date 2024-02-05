@@ -1,0 +1,10 @@
+.contacts__route {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  grid-area: map;
+  align-items: top;
+}

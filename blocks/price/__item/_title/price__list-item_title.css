@@ -1,0 +1,21 @@
+.price__list-item_title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #000000;
+  text-align: left;
+}
+
+.price__list-item_additional .price__list-item_title{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #87BFCC;
+  text-align: left;
+}
