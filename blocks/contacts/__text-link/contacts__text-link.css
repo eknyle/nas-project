@@ -5,3 +5,8 @@
   text-decoration: none;
   color: #000000;
 }
+
+.contacts__text-link:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
