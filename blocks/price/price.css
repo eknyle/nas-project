@@ -1,10 +1,10 @@
 .price {
   margin: 0;
-  padding: 20px 5vw 0 5vw;
+  padding: 5vw 5vw 0 5vw;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom,#c4969e66 80%, #f3f0f4 98%);
+  background-image: linear-gradient(#f3f0f4 15%,#c4969e66 70%, #f3f0f4 98%);
 }

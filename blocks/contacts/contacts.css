@@ -1,6 +1,6 @@
 .contacts {
   margin: 0;
-  padding: 20px 5vw 0 5vw;
+  padding: 5vw 5vw 0 5vw;
   display: grid;
   grid-template-areas:
   'title title'
@@ -9,6 +9,6 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   column-gap: 40px;
-  row-gap: 40px;
+  row-gap: 80px;
   background-image: linear-gradient(to top,#c4969e66 80%, #f3f0f4 98%);
 }

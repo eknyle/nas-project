@@ -1,0 +1,11 @@
+.gallery__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 33vw;
+  max-width: 600px;
+  min-width: 200px;
+  max-height: 600px;
+  min-height: 200px;
+  height: 33vw;
+}

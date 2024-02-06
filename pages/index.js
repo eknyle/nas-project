@@ -8,16 +8,17 @@ function animation (){
   gsap.registerPlugin(ScrollTrigger);
 
   const tlTitle=gsap.timeline({});
-  tlTitle.from('.main__title p:first-child', {
+  tlTitle.from('.main__title', {
       duration: 1,
       ease: "back.out(1.7)",
       x: -250
   })
-  tlTitle.from('.main__title p:last-child', {
+  tlTitle.from('.main__title-text', {
     duration: 1,
     ease: "back.out(1.7)",
     x: 250
 },'<')
+  tlTitle.from('.main__title', {duration: 3, color: '#f3f0f4' },'<')
   tlTitle.from('.main__title-text', {duration: 3, color: '#f3f0f4' },'<')
   tlTitle.from('.main__address-box', {duration: 2, scale: 0.5 }, '<')
 
@@ -90,13 +91,13 @@ function animation (){
   ///////////////////////////////////
 
   let tl = gsap.timeline();
-  let marquee = document.querySelector(".marquee");
-  let content = document.querySelector(".marquee__content");
-  let items = document.querySelectorAll(".marquee__item");
+  let marquee = document.querySelector(".gallery");
+  let content = document.querySelector(".gallery__content");
+  let items = document.querySelectorAll(".gallery__item");
   let tlLength = items.length * 2;
 
   // animation timeline
-  tl.to(".marquee__content", tlLength, {
+  tl.to(".gallery__content", tlLength, {
     xPercent: -100,
     repeat: -1,
     ease: "none"

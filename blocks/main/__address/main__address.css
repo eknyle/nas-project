@@ -1,7 +1,7 @@
 .main__address {
   padding: 0;
   margin: 83px 0 0 0;
-  width: 50%;
+  width: 50vw;
   height: 100vh-83px;
   background-image: linear-gradient(to bottom,#c4969e66 80%, #f3f0f4 98%);
   position: relative;

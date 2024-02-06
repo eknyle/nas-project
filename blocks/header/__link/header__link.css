@@ -1,0 +1,12 @@
+.header__link {
+  color: #101010;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__link:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}

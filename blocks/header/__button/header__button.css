@@ -1,8 +1,12 @@
 .header__button {
   padding: 0;
   margin: 0;
-  width: 179px;
-  height: 38px;
+  width: 12vw;
+  min-width: 120px;
+  max-width: 179px;
+  height: 3vw;
+  min-height: 30px;
+  max-height: 38px;
   background-color: #c4969e;
   color: #ffffff;
   border: none;

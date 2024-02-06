@@ -1,0 +1,4 @@
+.gallery__content {
+  flex-shrink: 0;
+  display: flex;
+}
