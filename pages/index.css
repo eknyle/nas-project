@@ -6,6 +6,7 @@
 @import url(../blocks/header/__list/header__list.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
 @import url(../blocks/header/__button/header__button.css);
+
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__address/main__address.css);
 @import url(../blocks/main/__info/main__info.css);
@@ -13,7 +14,6 @@
 @import url(../blocks/main/__info/main__info.css);
 @import url(../blocks/main/__title/main__title.css);
 @import url(../blocks/main/__title-text/main__title-text.css);
-@import url(../blocks/main/__title-name/main__title-name.css);
 @import url(../blocks/main/__description/main__description.css);
 @import url(../blocks/main/__button-feedback/main__button-feedback.css);
 @import url(../blocks/main/__button/main__button.css);
@@ -53,7 +53,7 @@
 @import url(../blocks/item/item.css);
 @import url(../blocks/item/__price/item__price.css);
 @import url(../blocks/item/__subtitle/item__subtitle.css);
-@import url(../blocks/item/__title/item_title.css);
+@import url(../blocks/item/__title/item__title.css);
 
 @import url(../blocks/item-additional/item-additional.css);
 @import url(../blocks/item-additional/__price/item-additional__price.css);
