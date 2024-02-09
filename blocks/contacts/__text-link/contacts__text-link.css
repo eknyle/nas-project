@@ -10,3 +10,9 @@
   transition: 1s;
   transform: scale(1.2);
 }
+@media screen and (max-width:700px){
+  .contacts__text-link{
+    margin: 20px 0 0 0;
+  }
+
+}

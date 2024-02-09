@@ -15,16 +15,30 @@
   <body>
     <div class="page">
       <header class="header">
-        <ul class="header__list">
-          <li class="header__list-item"><a class="header__link" href="#services">Услуги</a></li>
-          <li class="header__list-item"><a class="header__link" href="#price">Прайс</a></li>
-          <li class="header__list-item"><a class="header__link" href="#portfolio">Портфолио</a></li>
-          <li class="header__list-item"><a class="header__link" href="#contacts">Контакты</a></li>
-          <li class="header__list-item">Пн - Вс. 10:00 - 22:00</li>
-          <li class="header__list-item">
-            <button class="header__button">Записаться</button>
-          </li>
-        </ul>
+          <ul class="header__list">
+            <li class="header__list-item"><a class="header__link" href="#services">Услуги</a></li>
+            <li class="header__list-item"><a class="header__link" href="#price">Прайс</a></li>
+            <li class="header__list-item"><a class="header__link" href="#portfolio">Портфолио</a></li>
+            <li class="header__list-item"><a class="header__link" href="#contacts">Контакты</a></li>
+            <li class="header__list-item">Пн - Вс. 10:00 - 22:00</li>
+            <li class="header__list-item">
+              <button class="header__button">Записаться</button>
+            </li>
+          </ul>
+          <div class="burger">
+            <input id="burger__toggle" class="burger__toggle" type="checkbox" />
+            <label class="burger__button" for="burger__toggle">
+              <span></span>
+            </label>
+
+            <ul class="burger__box">
+              <li><a class="burger__item" href="#main">Главная</a></li>
+                    <li><a class="burger__item" href="#services">Услуги</a></li>
+                    <li><a class="burger__item" href="#price">Цена</a></li>
+                    <li><a class="burger__item" href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+
       </header>
       <main id="main" class="main">
         <div class="main__info">

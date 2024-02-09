@@ -10,3 +10,14 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width:700px) {
+  .main__address {
+    margin: 0;
+    width: 100%;
+    height: min-content;
+    background-image: none;
+    box-sizing: border-box;
+  }
+}
+
+

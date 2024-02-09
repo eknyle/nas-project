@@ -11,4 +11,16 @@
   column-gap: 40px;
   row-gap: 80px;
   background-image: linear-gradient(to top,#c4969e66 80%, #f3f0f4 98%);
+  box-sizing: border-box;
+}
+@media screen and (max-width:700px){
+  .contacts{
+    grid-template-areas:
+  'title'
+  'text'
+  'map'
+  ;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  }
 }

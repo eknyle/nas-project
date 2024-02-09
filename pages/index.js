@@ -1,92 +1,108 @@
-
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
+  burgerAction();
   animation();
 });
 
-
-function animation (){
+function burgerAction() {
+  const burgerCheckbox = document.querySelector(".burger__toggle");
+  const burgerItems = document.querySelectorAll(".burger__item");
+  burgerItems.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      burgerCheckbox.checked = false;
+    });
+  });
+}
+function animation() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const tlTitle=gsap.timeline({});
-  tlTitle.from('.main__title', {
-      duration: 1,
-      ease: "back.out(1.7)",
-      x: -250
-  })
-  tlTitle.from('.main__title-text', {
+  const tlTitle = gsap.timeline({});
+  tlTitle.from(".main__title", {
     duration: 1,
     ease: "back.out(1.7)",
-    x: 250
-},'<')
-  tlTitle.from('.main__title', {duration: 3, color: '#f3f0f4' },'<')
-  tlTitle.from('.main__title-text', {duration: 3, color: '#f3f0f4' },'<')
-  tlTitle.from('.main__address-box', {duration: 2, scale: 0.5 }, '<')
-
-
-  gsap.timeline({
-    defaults: {
-      ease: "none"
-    },
-    scrollTrigger: {
-      trigger: '.services__title',
-      start: "top bottom",
-      end: "+=50",
-      pin:true,
-      scrub: 1
-    }
-  })
-  .from('.services__title', {
-    x: -250
+    x: -250,
   });
-
-  gsap.timeline({
-    defaults: {
-      ease: "none"
+  tlTitle.from(
+    ".main__title-text",
+    {
+      duration: 1,
+      ease: "back.out(1.7)",
+      x: 250,
     },
-    scrollTrigger: {
-      trigger: '.price__title',
-      start: "top bottom",
-      end: "+=50",
-      pin:true,
-      scrub: 1
-    }
-  })
-  .from('.price__title', {
-    x: -250
-  });
+    "<"
+  );
+  if (document.documentElement.clientWidth > 700) {
+    tlTitle.from(".main__title", { duration: 3, color: "#f3f0f4" }, "<");
+    tlTitle.from(".main__title-text", { duration: 3, color: "#f3f0f4" }, "<");
+  }
+  tlTitle.from(".main__address-box", { duration: 2, scale: 0.5 }, "<");
 
-  gsap.timeline({
-    defaults: {
-      ease: "none"
-    },
-    scrollTrigger: {
-      trigger: '.contacts__title',
-      start: "top bottom",
-      end: "+=50",
-      pin:true,
-      scrub: 1
-    }
-  })
-  .from('.contacts__title', {
-    x: -250
-  });
+  gsap
+    .timeline({
+      defaults: {
+        ease: "none",
+      },
+      scrollTrigger: {
+        trigger: ".services__title",
+        start: "top bottom",
+        end: "+=50",
+        pin: true,
+        scrub: 1,
+      },
+    })
+    .from(".services__title", {
+      x: -250,
+    });
 
-  gsap.timeline({
-    defaults: {
-      ease: "none"
-    },
-    scrollTrigger: {
-      trigger: '.portfolio__title',
-      start: "top bottom",
-      end: "+=50",
-      pin:true,
-      scrub: 1
-    }
-  })
-  .from('.portfolio__title', {
-    x: -250
-  });
+  gsap
+    .timeline({
+      defaults: {
+        ease: "none",
+      },
+      scrollTrigger: {
+        trigger: ".price__title",
+        start: "top bottom",
+        end: "+=50",
+        pin: true,
+        scrub: 1,
+      },
+    })
+    .from(".price__title", {
+      x: -250,
+    });
 
+  gsap
+    .timeline({
+      defaults: {
+        ease: "none",
+      },
+      scrollTrigger: {
+        trigger: ".contacts__title",
+        start: "top bottom",
+        end: "+=50",
+        pin: true,
+        scrub: 1,
+      },
+    })
+    .from(".contacts__title", {
+      x: -250,
+    });
+
+  gsap
+    .timeline({
+      defaults: {
+        ease: "none",
+      },
+      scrollTrigger: {
+        trigger: ".portfolio__title",
+        start: "top bottom",
+        end: "+=50",
+        pin: true,
+        scrub: 1,
+      },
+    })
+    .from(".portfolio__title", {
+      x: -250,
+    });
 
   ///////////////////////////////////
 
@@ -100,7 +116,7 @@ function animation (){
   tl.to(".gallery__content", tlLength, {
     xPercent: -100,
     repeat: -1,
-    ease: "none"
+    ease: "none",
   });
 
   let currentScale = 1;
@@ -120,32 +136,31 @@ function animation (){
           scaleTl = gsap
             .timeline({
               deafults: {
-                ease: "power2.out"
+                ease: "power2.out",
               },
               onComplete: () => {
                 currentScale = 1;
                 scaleTl.kill();
-              }
+              },
             })
             .to(tl, {
               duration: 0.2,
               timeScale: tScale,
-                ease: "power2.out"
+              ease: "power2.out",
             })
             .to(
               tl,
               {
                 timeScale: 1,
                 duration: 1,
-                ease: "none"
+                ease: "none",
               },
               "+=1"
             );
         }
       }
-    }
+    },
   });
-
 
   /////////////////////////////////
 }

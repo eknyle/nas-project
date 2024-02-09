@@ -1,0 +1,18 @@
+.burger__toggle {
+  opacity: 0;
+}
+.burger__toggle:checked ~ .burger__button > span {
+  transform: rotate(45deg);
+}
+.burger__toggle:checked ~ .burger__button > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+.burger__toggle:checked ~ .burger__button > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.burger__toggle:checked ~ .burger__box {
+  visibility: visible;
+  right: 0;
+}

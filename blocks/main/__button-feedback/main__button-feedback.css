@@ -11,10 +11,15 @@
   border-radius: 36px;
   text-transform: uppercase;
   transition-duration: 0.4s;
-  box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main__button-feedback:hover {
   background-color: #ffffff;
   color: #c4969e;
+}
+@media screen and (max-width: 700px) {
+  .main__button-feedback {
+    margin: 0 0 15px 0;
+  }
 }

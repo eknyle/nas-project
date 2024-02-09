@@ -1,9 +1,18 @@
-.main__title-text{
+.main__title-text {
   margin: 0 0 20px 0;
   padding: 0;
   text-transform: uppercase;
-  font-family: 'Montserat','Inter', Arial, sans-serif;
+  font-family: "Montserat", "Inter", Arial, sans-serif;
   font-size: 60px;
   font-weight: 500;
-  color: rgb(147,75,88,1);
+  color: rgb(147, 75, 88, 1);
+}
+@media screen and (max-width: 700px) {
+  .main__title-text {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    color: #F3F0F4;
+  }
 }

@@ -1,0 +1,29 @@
+.burger__button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 26px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.burger__button > span,
+.burger__button > span::before,
+.burger__button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+  transition-duration: .25s;
+}
+.burger__button > span::before {
+  content: '';
+  top: -8px;
+}
+.burger__button > span::after {
+  content: '';
+  top: 8px;
+}

@@ -3,6 +3,7 @@
   margin: 0 auto;
   max-width: 1600px;
   min-width: 320px;
+  width: 100%;
   min-height: 100%;
   background-color: #f3f0f4;
   -webkit-font-smoothing: antialiased;

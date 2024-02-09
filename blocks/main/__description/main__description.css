@@ -1,8 +1,14 @@
 .main__description {
   margin: 80px 0 0 0;
   padding: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
   line-height: 1.5;
+}
+@media screen and (max-width: 700px) {
+  .main__description {
+    width: 365px;
+    margin: 60px 0 80px 0;
+  }
 }
