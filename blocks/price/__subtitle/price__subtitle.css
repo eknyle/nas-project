@@ -9,3 +9,8 @@
   color: #C4969E;
   border-bottom: solid 1px #87BFCC;
 }
+@media screen and (max-width: 400px){
+  .price__subtitle{
+    font-size: 20px;
+  }
+}

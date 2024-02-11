@@ -7,3 +7,8 @@
   font-weight: 500;
   color: #000000;
 }
+@media screen and (max-width: 400px){
+  .portfolio__title{
+    font-size: 30px;
+  }
+}

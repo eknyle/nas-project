@@ -9,3 +9,8 @@
   width: min-content;
   text-align: right;
 }
+@media screen and (max-width:700px) {
+  .item__price{
+    font-size: 16px;
+  }
+}
