@@ -13,11 +13,12 @@
   align-items: start;
   min-width: 280px;
   min-height: 140px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 700px){
   .main__address-box {
-    min-width: 40vw;
-    height: 20vw;
+    width: 40%;
+    height: 20%;
   }
 
 }

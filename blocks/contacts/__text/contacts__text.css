@@ -7,3 +7,8 @@
   width:min-content;
   grid-area: text;
 }
+@media screen and (max-width:400px){
+  .contacts__text{
+    width: 100%;
+  }
+}
