@@ -1,0 +1,10 @@
+.list__item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: 'Montserat','Inter', Arial, sans-serif;
+  text-align: center;
+  color: #87BFCC;
+}

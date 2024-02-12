@@ -1,4 +1,4 @@
-.services__title {
+.feedback__title{
   margin: 0 0 40px 0;
   padding: 0;
   text-transform: uppercase;
@@ -8,7 +8,7 @@
   color: #000000;
 }
 @media screen and (max-width: 500px){
-  .services__title{
+  .feedback__title{
     font-size: 30px;
   }
 }

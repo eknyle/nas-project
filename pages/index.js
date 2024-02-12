@@ -104,7 +104,6 @@ function animation() {
       x: -250,
     });
 
-  ///////////////////////////////////
 
   let tl = gsap.timeline();
   let marquee = document.querySelector(".gallery");
@@ -162,5 +161,4 @@ function animation() {
     },
   });
 
-  /////////////////////////////////
 }

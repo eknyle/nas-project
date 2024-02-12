@@ -20,6 +20,6 @@
     display: none;
   }
   .header__list-item:last-child {
-    margin-left: 15vw;
+    margin-left: 10vw;
   }
 }
