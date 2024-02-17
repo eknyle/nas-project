@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   background-color: rgba(243, 240, 244, 0.7);
-  height: 83px;
+  min-height: 83px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 3;
   position: relative;
 }

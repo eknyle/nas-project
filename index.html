@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta
       name="keywords"
-      content="ресницы, брови, перманент, ресницыпитер, ресницыпетергоф, брови Петергоф, салон красоты Петергоф">
+      content="реснички2д Петергоф,перманентный татуаж Петергоф, брови, перманент, ресницыпитер, ресницыпетергоф, брови Петергоф, салон красоты Петергоф">
     <meta name="description" content="" >
     <meta name="author" content="shibanova_lash" >
     <link rel="stylesheet" href="./pages/index.css">
@@ -41,7 +41,6 @@
                     <li><a class="burger__item" href="#contacts">Контакты</a></li>
             </ul>
           </div>
-
       </header>
       <main id="main" class="main">
         <div class="main__info">
@@ -279,17 +278,20 @@
           <div class="list__item">
             <img class="list__item-photo" alt="Отзыв" src="./images/fb1.jpg">
             <span class="list__item-title">Очень довольна</span>
-            <span class="list__item-description">Большое спасибо за мои прекрасные реснички. Рекомендую!</span>
+            <p class="list__item-description">Большое спасибо за мои прекрасные реснички. Рекомендую!</p>
+            <span class="list__item-author">Марина</span>
           </div>
           <div class="list__item">
             <img class="list__item-photo" alt="Отзыв" src="./images/fb2.jpg">
             <span class="list__item-title">Спасибо</span>
-            <span class="list__item-description">Настя профессионал своего дела. Всем очень советую!</span>
+            <p class="list__item-description">Настя профессионал своего дела. Всем очень советую!</p>
+            <span class="list__item-author">Ольга</span>
           </div>
           <div class="list__item">
             <img class="list__item-photo" alt="Отзыв" src="./images/fb3.jpg">
             <span class="list__item-title">Благодарю</span>
-            <span class="list__item-description">Теперь я постоянный клиент. Прекрасное отношение и высокий профессионализм.</span>
+            <p class="list__item-description">Делаю реснички не первый раз. Теперь я постоянный клиент. Прекрасное отношение и высокий профессионализм.</p>
+            <span class="list__item-author">Светлана</span>
           </div>
         </div>
       </section>
@@ -316,6 +318,14 @@
             <img class="contacts__map" src="./images/map.jpg" alt="Карта" >
           </a>
         </div>
+      </section>
+      <section class="popup">
+        <form class="popup__main">
+          <input class="popup__title" type="text" required maxlength="20" placeholder="Спасибо" value="Спасибо">
+          <textarea class="popup__text" maxlength="100" required placeholder="Введите текст отзыва (100 символов)"></textarea>
+          <input class="popup__name" type="text" required maxlength="20" placeholder="Введите имя">
+          <button class="popup__button color" form="popup__main" type="submit">Отправить</button>
+        </form>
       </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

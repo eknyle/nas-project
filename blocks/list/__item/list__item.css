@@ -1,8 +1,8 @@
 .list__item{
   margin: 0;
-  padding: 5px 5px;
+  padding: 10px 10px;
   width: 250px;
-  height: 140px;
+  height: 250px;
   background-color: rgb(255,255,255,0.6);
   box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2);
   border-radius: 30px;
@@ -12,4 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 10px;
+  box-sizing: border-box;
 }

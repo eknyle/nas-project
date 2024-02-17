@@ -4,6 +4,9 @@
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  font-family: 'Montserat','Inter', Arial, sans-serif;
+  font-family: "Montserat", "Inter", Arial, sans-serif;
   text-align: center;
+  word-wrap: break-word;
+  flex: 1;
+  overflow: hidden;
 }
