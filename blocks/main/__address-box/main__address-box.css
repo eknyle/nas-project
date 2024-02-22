@@ -17,6 +17,7 @@
 }
 @media screen and (max-width: 700px){
   .main__address-box {
+    align-items: center;
     width: 40%;
     height: 20%;
   }
