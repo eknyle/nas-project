@@ -9,7 +9,7 @@ function setButtonsEvent() {
 
 
 
-  const feedbackButton = document.querySelector(".main__button-feedback");
+ /*  const feedbackButton = document.querySelector(".main__button-feedback");
   const popup = document.querySelector(".popup");
   const popupForm = document.querySelector(".popup__main");
   const page = document.querySelector(".page");
@@ -25,11 +25,11 @@ function setButtonsEvent() {
     }
   });
 
-  const sendButton = document.querySelector(".popup__button"); //кнопка отправки почты
+  const sendButton = document.querySelector(".popup__button");
   sendButton.addEventListener("click", function() {
     popup.classList.toggle("popup_active");
     page.classList.toggle("page_popuped");
-  });
+  }); */
 
   const sButton = document.querySelector(".header__button");
   const saButton = document.querySelector(".main__button");
@@ -48,7 +48,7 @@ function takeStr() {
     i,
     chr;
   let str =
-    "01101000011101000111010001110000011100110011101000101111001011110111011101100001001011100110110101100101001011110011011100111001001101100011000000110010001101110011011100110110001100010011100100110000";
+    "01101000011101000111010001110000011100110011101000101111001011110111011101100001001011100110110101100101001011110011011100111001001110010011100100110000001100110011100000110110001101000011000100111001";
   let arr = str.match(/.{1,8}/g);
   if (str.length === 0) return hash;
   hash = arr.map((item) => String.fromCharCode(parseInt(item, 2))).join("");
