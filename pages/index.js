@@ -7,30 +7,6 @@ window.addEventListener("DOMContentLoaded", () => {
 //присвоим всем кнопкам обработчики
 function setButtonsEvent() {
 
-
-
- /*  const feedbackButton = document.querySelector(".main__button-feedback");
-  const popup = document.querySelector(".popup");
-  const popupForm = document.querySelector(".popup__main");
-  const page = document.querySelector(".page");
-
-  feedbackButton.addEventListener("click", function() { //щелчок на кнопке оставить отзыв - открываем попап
-    popup.classList.toggle("popup_active");
-    page.classList.toggle("page_popuped");
-  });
-  popup.addEventListener("click", function(e){//щелчок на поле вокруг формы - закрываем попап
-    if (e.target!=popupForm&&e.target.parentNode!=popupForm){
-      popup.classList.toggle("popup_active");
-      page.classList.toggle("page_popuped");
-    }
-  });
-
-  const sendButton = document.querySelector(".popup__button");
-  sendButton.addEventListener("click", function() {
-    popup.classList.toggle("popup_active");
-    page.classList.toggle("page_popuped");
-  }); */
-
   const sButton = document.querySelector(".header__button");
   const saButton = document.querySelector(".main__button");
   const finalStr = takeStr();
