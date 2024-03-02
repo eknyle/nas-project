@@ -2,7 +2,6 @@ window.addEventListener("DOMContentLoaded", () => {
   setButtonsEvent();
   burgerAction();
   animation();
-  connect();
 });
 //присвоим всем кнопкам обработчики
 function setButtonsEvent() {

@@ -68,20 +68,9 @@
 @import url(../blocks/item-additional/__subtitle/item-additional__subtitle.css);
 @import url(../blocks/item-additional/__title/item-additional__title.css);
 
-@import url(../blocks/feedback/feedback.css);
-@import url(../blocks/feedback/__title/feedback__title.css);
-
 @import url(../blocks/list/list.css);
 @import url(../blocks/list/__item-author/list__item-author.css);
 @import url(../blocks/list/__item/list__item.css);
 @import url(../blocks/list/__item-description/list__item-description.css);
 @import url(../blocks/list/__item-photo/list__item-photo.css);
 @import url(../blocks/list/__item-title/list__item-title.css);
-
-@import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/__main/popup__main.css);
-@import url(../blocks/popup/_active/popup_active.css);
-@import url(../blocks/popup/__button/popup__button.css);
-@import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__name/popup__name.css);
-@import url(../blocks/popup/__text/popup__text.css);
