@@ -1,11 +1,22 @@
+
+const gallery = [
+  { link: "./images/IMG_1.jpg", alt: "Перманентый макияж" },
+  { link: "./images/IMG_3.jpg", alt: "Оформление бровей" },
+  { link: "./images/lami.jpg", alt: "Ламинирование ресниц" },
+  { link: "./images/IMG_4.jpg", alt: "Наращивание ресниц" },
+  { link: "./images/IMG_2.jpg", alt: "Окрашивание ресниц" },
+];
+const servicesFile = "./pages/services.txt";
+const priceFile = "./pages/price.txt";
+
 window.addEventListener("DOMContentLoaded", () => {
+  createGallery(gallery);
   setButtonsEvent();
   burgerAction();
   animation();
 });
 //присвоим всем кнопкам обработчики
 function setButtonsEvent() {
-
   const sButton = document.querySelector(".header__button");
   const saButton = document.querySelector(".main__button");
   const finalStr = takeStr();
@@ -186,3 +197,29 @@ function animation() {
     },
   });
 }
+
+function createGallery(galleryArray){
+  const galleryParent=document.querySelector('.gallery');
+
+  for (let i=0;i<2;i++){
+    const div= createDiv('gallery__content');
+    galleryArray.forEach(it=>{
+      div.appendChild(createImage(it,'gallery__item'));
+    });
+    galleryParent.appendChild(div);
+  }
+}
+
+function createImage(item,className) {
+  const img = new Image();
+  img.src = item.link;
+  img.alt = item.alt;
+  img.classList.add(className);
+  return img;
+}
+function createDiv(className) {
+  const div = document.createElement("div");
+  div.classList.add(className);
+  return div;
+}
+
